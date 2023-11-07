@@ -1,0 +1,55 @@
+/*FUENTE IMPORTADA DESDE GOOGLE*/
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;500;600;700&display=swap"); /*página principal*/
+
+/*----------------------------------------------------------*/
+/*------------ESTILOS GLOBALES DEL DOCUMENTO----------------*/
+/*----------------------------------------------------------*/
+body {
+    font-family: 'PT Sans',sans-serif;
+        background: -webkit-linear-gradient(to right, #DD2476, #FF512F);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #DD2476, #FF512F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+html{font-size: 62.5%;font-family:sans-serif;}
+:root{
+    --ColorLetra:hsl(0, 0%, 100%);
+    --ColorTituloPrimario:hsl(44, 100%, 61%);
+    --FondoPrimario:hsl(0, 0%, 0%);
+}
+/*----------------------------------------------------------*/
+/*----------RESET DEL DOCUMENTO-----------------------------*/
+/*----------------------------------------------------------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PT Sans',sans-serif;
+}
+h1, h2, h3, h4, h5, h6, p, a, input, textarea,ul{
+    margin: 0;
+    padding: 0;
+}
+ul{list-style: none;}
+li{list-style: none;}
+a{text-decoration: none;}
+/*----------------------------------------------------------*/
+/*----------ESTILOS DEL DOCUMENTO---------------------------*/
+/*----------------------------------------------------------*/
+.Contenido p{
+    font-size: 2.5rem;
+    text-align-last: center;
+    margin: 50px;
+    color: var(--ColorLetra);
+}
+.Contenido h1{
+    color:var(--ColorTituloPrimario);
+    text-align-last: center;
+    font-size: 3rem;
+    padding-bottom: 1rem;
+    padding-top: 20rem;
+}
+.Contenido h2{
+    text-align-last: center;
+    font-size: 2rem;
+    color: var(--ColorLetra);
+}
