@@ -1,0 +1,185 @@
+/*FUENTE IMPORTADA DESDE GOOGLE*/
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;500;600;700&display=swap"); /*página principal*/
+
+/*----------------------------------------------------------*/
+/*------------ESTILOS GLOBALES DEL DOCUMENTO--*/
+/*----------------------------------------------------------*/
+body {
+    font-family: 'PT Sans',sans-serif;
+    background: linear-gradient(to right, #DD2476, #FF512F); 
+}
+html{font-size: 62.5%;font-family:sans-serif;}
+:root{
+    --ColorLetra:hsl(0, 0%, 100%);
+    --ColorTituloPrimario:hsl(44, 100%, 61%);
+    --FondoPrimario:hsl(0, 0%, 0%);
+}
+/*----------------------------------------------------------*/
+/*----------RESET DEL DOCUMENTO-------------------*/
+/*----------------------------------------------------------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PT Sans',sans-serif;
+}
+h1, h2, h3, h4, h5, h6, p, a, input, textarea,ul{
+    margin: 0;
+    padding: 0;
+}
+ul{list-style: none;}
+li{list-style: none;}
+a{text-decoration: none;}
+/*----------------------------------------------------------*/
+/*----------ESTILOS DEL DOCUMENTO-----------------*/
+/*----------------------------------------------------------*/
+.Parrafo{
+    font-size: 2rem;
+    text-align: center;
+    margin: 50px;
+    color: var(--ColorLetra);
+}
+.Contenido__Parrafo{
+    font-size: 2rem;
+    text-align: center;
+    margin: 50px;
+    color: var(--ColorLetra);
+}
+.Contenido__Titulo{
+    color:var(--ColorTituloPrimario);
+    text-align: center;
+    font-size: 3rem;
+    padding-bottom: 1rem;
+    padding-top: 8rem;
+}
+.Contenido__Subtitulo{
+    text-align: center;
+    font-size: 2rem;
+    color: var(--ColorLetra);
+    margin-bottom: 3rem;
+}
+/*----------------------------------------------------------*/
+/*----------ESTILOS DE LA TABLA DE EJERCICIOS------*/
+/*----------------------------------------------------------*/
+.Content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 24vh;
+}
+.Tabla{
+    color: var(--ColorLetra);
+    font-size: 16px;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border: solid 1px #F8C471;
+}
+.Tabla__Encabezado{
+    background: #F5B041 ;
+    color: #000;
+}
+.Tabla__Encabezado th{
+    padding: 13px 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.Tabla td{
+    padding: 9px;
+    text-align: center;
+    border-bottom: 1px solid #F8C471;
+}
+tbody tr:hover{
+    background:#F8C471;
+    cursor: pointer;
+    color: #000;
+}
+/*---------------------------------------------------*/
+/*----------ESTILOS PARA LOS BOTONES-------*/
+/*--------------------------------------------------*/
+.button-container {
+    text-align: center;
+}
+.button-container--action {
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    background-color: #2ecc71;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.button-container--action:hover {
+    background-color: #27ae60;
+}
+/*---------------------------------------------------*/
+/*----------ESTILOS PARA LOS BOTONES-------*/
+/*--------------------------------------------------*/
+.button-container--link {
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    background-color: #35C0F8;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.button-container--link:hover {
+    background-color:#059EDC;
+}
+/*--------------------------------------------------------*/
+/*----------ESTILOS PARA LA CALCULADORA-------*/
+/*-------------------------------------------------------*/
+.Campo {
+    width: 150px;
+    text-align: center;
+    font-size: 2rem;
+    padding: 10px 20px;
+    margin: 3px;
+    border: none;
+}
+.Campo:hover{
+    cursor: pointer;
+    
+}
+.Calculadora__container{
+    text-align: center;
+}
+.Calcular{
+    width: 300px;
+    background-color: #2ecc71;
+    border: none;
+}
+.Calcular:hover{
+    background-color: #059EDC;
+}
+.Resultado{
+    background-color: #35C0F8;
+    width: 630px ;
+    height: 80px;
+}
+.Digito{
+    background-color: #059EDC;
+}
+.Digito:hover{
+    background-color: #2ecc71;
+}
+.Simbolo{
+    background-color: #055ADC;
+}
+.Borrar{
+    background-color: red;
+}
+/*-----------------------------------------------------------------*/
+/*----------ESTILOS PARA LA TABLA DE MULTIPLICAR-------*/
+/*---------------------------------------------------------------*/
+.Content{
+    text-align: center;
+}
+.Cabecera{
+    height: 30px;
+    text-align: center;
+}

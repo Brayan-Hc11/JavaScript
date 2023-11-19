@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="CSS/Main.css">
+
+    <title>Taller 1: Uso de condicionales en JavaScript </title>
+</head>
+
+
+<body>
+
+    <div class="Contenido">
+        <h1 class="Contenido__Titulo">Taller 1: Uso de condicionales en JavaScript</h1>
+        <h2 class="Contenido__Subtitulo">Bienvenido al Ejercicio Uno: Parte Dos</h2>
+
+        <p class="Parrafo">
+            Este Ejercicio consta de que el usuario logre 
+           usar una calculadora en las que pueda usar 
+           las cuatro operaciones arítmeticas
+        </p>
+
+        <p class="Contenido__Parrafo"></p>
+
+        <div class="button-container">
+            <a href="index.html" class="button-container--link">Regresar</a>
+        </div>
+
+        <br><br><br><br>
+
+        <h2 class="Contenido__Subtitulo">Calculadora</h2>
+            <div class="calculator">
+                <form name="calculator" class="Calculadora__container">
+
+                    <input type="text" name="display" id="display" readonly class="Resultado Campo">
+                    <br>
+
+                    <input type="button" class="Digito Campo" value="1" onclick="numero('1')">
+                    <input type="button" class="Digito Campo" value="2" onclick="numero('2')">
+                    <input type="button" class="Digito Campo" value="3" onclick="numero('3')">
+                    <input type="button" class="Simbolo Campo" value="+" onclick="numero('+')">
+                    <br>
+
+                    <input type="button" class="Digito Campo" value="4" onclick="numero('4')">
+                    <input type="button" class="Digito Campo" value="5" onclick="numero('5')">
+                    <input type="button" class="Digito Campo" value="6" onclick="numero('6')">
+                    <input type="button" class="Simbolo Campo" value="-" onclick="numero('-')">
+                    <br>
+
+                    <input type="button" class="Digito Campo" value="7" onclick="numero('7')">
+                    <input type="button" class="Digito Campo" value="8" onclick="numero('8')">
+                    <input type="button" class="Digito Campo" value="9" onclick="numero('9')">
+                    <input type="button" class="Simbolo Campo" value="X" onclick="numero('*')">
+                    <br>
+
+                    <input type="button" class="Digito Campo" value="0" onclick="numero('0')">
+                    <input type="button" class="Simbolo Campo" value="." onclick="numero('.')">
+                    <input type="button" class="Simbolo Campo" value="/" onclick="numero('/')">
+
+                    <input  class="Borrar Campo" type="button" value="Limpiar" onclick="borrar()">
+                    <br>
+                    <input class="Calcular Campo" type="button" value="Calcular" onclick="calcular()">
+                </form>
+            </div>
+        
+        <script>
+            function numero(value) {
+                document.calculator.display.value += value;
+            }
+    
+            function borrar() {
+                document.calculator.display.value = '';
+            }
+    
+            function calcular() {
+                try {
+                    document.calculator.display.value = eval(document.calculator.display.value);
+                } catch (error) {
+                    document.calculator.display.value = 'Ingrese un  valor a operar';
+                }
+            }
+        </script>
+    </div>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
+
+

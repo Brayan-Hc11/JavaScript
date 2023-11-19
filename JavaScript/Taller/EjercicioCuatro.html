@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="CSS/Main.css">
+
+    <title>Taller 1: Uso de condicionales en JavaScript </title>
+</head>
+
+
+<body>
+
+    <div class="Contenido">
+        <h1 class="Contenido__Titulo">Taller 1: Uso de condicionales en JavaScript</h1>
+        <h2 class="Contenido__Subtitulo">Bienvenido al Ejercicio Uno: Parte Dos</h2>
+
+        <p class="Parrafo">
+            Este Ejercicio consta de que el usuario logre 
+           digitar un numero con el cual tiempo despues 
+           se le muestre la tabla de multiplicar correspondiente 
+           al digito
+        </p>
+
+        <p class="Contenido__Parrafo"></p>
+
+        <div class="button-container">
+            <a href="index.html" class="button-container--link">Regresar</a>
+        </div>
+
+        <br><br><br><br>
+
+        <h2 class="Contenido__Subtitulo">Tabla de multiplicar</h2>       
+
+        <div class="Content">    
+
+        <input type="number" id="numero" class="Cabecera">
+        <button onclick="mostrarTabla()">Mostrar Tabla</button>
+    
+        <div id="tablaResultado">
+
+        </div>
+        
+    </div>
+        <script>
+            function mostrarTabla() {
+                // Obtener el número ingresado por el usuario
+                const numero = document.getElementById('numero').value;
+    
+                // Validar si se ingresó un número
+                if (!isNaN(numero)) {
+                    let tablaHTML = '<h3 class="Contenido__Subtitulo">Tabla de Multiplicar del ' + numero + '</h3><ul>';
+                    
+                    // Generar la tabla de multiplicar
+                    for (let i = 1; i <= 10; i++) {
+                        const resultado = numero * i;
+                        tablaHTML += '<li>' + numero + ' x ' + i + ' = ' + resultado + '</li>';
+                    }
+    
+                    tablaHTML += '</ul>';
+    
+                    // Mostrar la tabla en el elemento con id 'tablaResultado'
+                    document.getElementById('tablaResultado').innerHTML = tablaHTML;
+                } else {
+                    alert('Por favor, ingrese un número válido.');
+                }
+            }
+        </script>
+
+        
+    </div>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
+
+
